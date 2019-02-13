@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skills Summary</title>
+</head>
+<body>
+    <h1>Skill #<%= skillsNum %></h1>
+        <h3><%= skills.lang %></h3>
+        <h3>Competency Level: <%= parseInt(skills.level) %></h3>
+        <form action="/skills/<%= skillsNum - 1 %>?_method=DELETE" id='delete-form' method='POST'>
+        <button type='submit'>Delete Skill</button></form>
+        <h6>Competency Levels:<br>
+            0 - Dreaming<br>
+            1 - Just Learning<br>
+            2 - Beginner<br>
+            3 - Intermediate</h6>    
+</body>
+</html>

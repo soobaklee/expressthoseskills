@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Skill</title>
+</head>
+<body>
+    <h3>Add a New Skill</h3>
+    <form action="/skills" method="POST" autocomplete="off">
+        <input type="text" name="lang" placeholder='Skill'> : 
+        <input type="text" name="level" placeholder='Competency'>
+        <button type='submit'>Save Skill</button>
+        <h4>Competency Levels:<br>
+            0 - Dreaming<br>
+            1 - Just Learning<br>
+            2 - Beginner<br>
+            3 - Intermediate</h4>
+    </form>
+    <h4><a href="/skills">Return to Skills Summary</a></h4>    
+</body>
+</html>
